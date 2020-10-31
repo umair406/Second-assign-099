@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WT_Assign-02</title>
+
+     <!-- Latest compiled and minified CSS -->
+     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+     <!-- jQuery library -->
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+     <script src="./jquery.js"></script>
+     <!-- Popper JS -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+ 
+     <!-- Latest compiled JavaScript -->
+     <script src="dist/js/bootstrap.min.js"></script>
+ 
+     <!-- CSS Files -->
+     <!-- <link rel="stylesheet" href="style.css">  -->
+ 
+</head>
+<body>
+    <div class="container my-5">
+        <h3 class="text-center my-3">Carbohydrates And Calories</h3>
+             
+            <div class="form-group">
+                <select class="form-control">
+                  <option selected disabled class="text-secondary">Select Food Name</option>
+                  <option>Bedfordshire clanger</option>
+                  <option>Bangers and mash</option>
+                  <option>Black pudding</option>
+                  <option>Cottage pie, Shepherd's pie</option>
+                </select>
+              </div>
+
+            <div class="form-group">
+                <select class="form-control" id="sel1">
+                  <option selected disabled value="0" data-cal="0" class="text-secondary">Milk (higher % of simple carbohydrates; less nutrient dense)</option>
+                  <option value="26" data-cal="208">Chocolate milk (1 cup)</option>
+                  <option value="12" data-cal="121">Low fat (2%) milk</option>
+                  <option value="30" data-cal="161">Pudding (any flavor) (1/2 cup)</option>
+                  <option value="42" data-cal="225">Yogurt (fruit-flavored, low fat) (1 cup)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="sel2">
+                  <option selected disabled value="0" data-cal="0" class="text-secondary">Beans (higher % of complex carbohydrates; more nutrient dense)</option>
+                  <option value="22" data-cal="134">Black eye peas (1/2 cup)</option>
+                  <option value="45" data-cal="269">Garbanzo beans (chick peas) (1 cup)</option>
+                  <option value="48" data-cal="259">Navy beans (1 cup)</option>
+                  <option value="44" data-cal="235">Pinto beans (1 cup)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="sel3">
+                  <option selected disabled value="0" data-cal="0" class="text-secondary">Fruits (higher % of simple carbohydrates; less nutrient dense)</option>
+                  <option value="21" data-cal="81">Apple (1 medium)</option>
+                  <option value="28" data-cal="111">Apple juice (1 cup)</option>
+                  <option value="60" data-cal="232">Applesauce (1 cup)</option>
+                  <option value="27" data-cal="105">Banana (1)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="sel4">
+                  <option selected disabled value="0" data-cal="0" class="text-secondary">Vegetables (higher % of complex carbohydrates; more nutrient dense)</option>
+                  <option value="8" data-cal="31">Carrot (1 medium)</option>
+                  <option value="21" data-cal="89">Corn (1/2 cup)</option>
+                  <option value="20" data-cal="108">Beans, Lima (1/2 cup cooked)</option>
+                  <option value="12" data-cal="63">Peas, green (1/2 cup)</option>
+                </select>
+              </div>
+
+              <div class="form-group">
+                <select class="form-control" id="sel5">
+                  <option selected disabled value="0" data-cal="0" class="text-secondary">Grains (higher % of complex carbohydrates; more nutrient dense)</option>
+                  <option value="12" data-cal="103">Biscuit (1)</option>
+                  <option value="15" data-cal="77">Breadsticks (2 sticks)</option>
+                  <option value="12" data-cal="61">Bread (white)(1 slice)</option>
+                  <option value="24" data-cal="110">Cereal, ready to eat (1 cup)</option>
+                </select>
+              </div>
+
+            <button type="submit" id="calculate" class="btn btn-primary d-block m-auto w-100">Calculate</button>
+        
+          
+          <div class="alert alert-primary d-none my-3" id="carbo-div">
+            Carbohydrates : <span id="carbo"></span><br>
+            Calories : <span id="carbo2"></span>
+          </div>
+    </div>
+    
+
+</body>
+</html>
